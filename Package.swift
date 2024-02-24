@@ -8,11 +8,6 @@ let package = Package(
     platforms: [.iOS(.v16), .macOS(.v13)],
     products: [
         .library(name: "Transformers", targets: ["Tokenizers", "Generation", "Models"]),
-        .executable(name: "transformers", targets: ["TransformersCLI"]),
-        .executable(name: "hub-cli", targets: ["HubCLI"]),
-    ],
-    dependencies: [
-        .package(url: "https://github.com/apple/swift-argument-parser.git", exact: "1.3.0")
     ],
     targets: [
         .executableTarget(
